@@ -49,7 +49,7 @@ const Login = () => {
             if (error.response && error.response.status === 401) {
                 setError('Nesprávne prihlasovacie údaje.');
             } else {
-                setError('Prihlásenie zlyhalo. Skúste to znova.');
+                setError('Prihláseniee zlyhalo. Skúste to znova.');
             }
         }
     };
