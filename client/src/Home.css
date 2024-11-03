@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+html {
+    --background-color: #FFF; 
+    --text-color: #000; 
+    --button-bg-color: #000; 
+    --button-text-color: #FFF; 
+    --icon-color: #000; 
+}
+
+body {
+    background-color: var(--background-color);
+    
+}
+
+.dark-mode {
+    --background-color: #000; 
+    --text-color: #FFF; 
+    --button-bg-color: #FFF; 
+    --button-text-color: #000; 
+    --icon-color: #FFF;
+}
+
+.main-home-container-box {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 60px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.second-home-container-box {
+    display: flex; 
+    align-items: center; 
+    max-width: 800px; 
+    width: 100%; 
+    padding: 20px; 
+
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.icon-container {
+    flex: 0 0 auto; 
+    margin-right: 20px; 
+}
+
+.vertical-line {
+    width: 2px; 
+    background-color: #6e6e6e; 
+    height: 50vh; 
+    margin-right: 20px; 
+}
+
+.third-home-container-box {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main-home-container-box button {
+    color: black;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px; 
+
+    margin-top: 10px; 
+    padding: 10px 90px; 
+    
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.first-home-btn,
+.second-home-btn { 
+    padding: 10px 90px; 
+    font-size: 30px; 
+    font-family: "Agdasima", sans-serif; 
+    font-weight: 400; 
+    border: none; 
+    transition: background-color 0.3s; 
+    margin: 0 5px; 
+}
+
+
+.second-home-btn {
+    background-color: #FFDE60; 
+    color: var(--button-text-color); 
+}
+
+.first-home-btn {
+    background-color: #6e6e6e; 
+    color: var(--button-text-color); 
+}
+
+.first-home-btn:hover {
+    background-color: #ffffff; 
+    color: white; 
+}
+
+.main-home-container-box button:hover {
+    background-color: #0e0e0e; 
+    color: white;
+}
+
+
+
+
+
+.dark-mode .first-home-btn{
+
+    background-color: var(--text-color);
+}
+
+
+
+.main-home-container-box button:hover {
+    background-color: #0e0e0e; 
+    color: white;
+}
+.home-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 800px) {
+
+    .second-home-container-box{
+        flex-direction: column ;
+    }
+    .vertical-line{
+        height: 2px;
+        width: 50vw; 
+
+    }
+    .third-home-container-box{
+        margin: 0 auto;
+    }
+    .third-home-container-box p {
+         text-align: center;
+    }
+
+}
+@media (max-width: 545px) {
+    .home-buttons{
+        flex-direction: column;
+    }
+}

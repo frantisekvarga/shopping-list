@@ -1,0 +1,161 @@
+:root {
+    --background-color-light: white;
+    --background-color-dark: #000000;
+    --text-color-light: black;
+    --text-color-dark: white;
+    --border-color-owner: #FFDE60; 
+    --border-color-non-owner: blue; 
+    --border-color-completed: rgb(90, 90, 90);
+    --overlay-background-color: white; 
+    --overlay-text-color-light: black; 
+    --overlay-text-color-dark: white; 
+    --order-name-color: white; 
+    --completed-order-name-color: grey; 
+    --order-status-color: #555; 
+}
+
+
+
+.order-name {
+    color: var(--order-name-color); 
+}
+
+.order-name.completed {
+    color: var(--completed-order-name-color);
+}
+
+.order-square:hover {
+    transform: translateY(-5px);
+}
+
+.order-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.order-owner,
+.order-status,
+.order-items {
+    font-size: 0.9rem;
+    color: var(--order-status-color); 
+}
+
+.showing{
+    color: rgb(255, 255, 255);
+}
+.dark-mode .showing{
+    color: var(--text-color-light);
+}
+
+.order-square {
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease; 
+    width: 210px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.order-square.owner {
+    border: 5px solid var(--border-color-owner); 
+}
+.order-square {
+    background-color: white;
+}
+.dark-mode .order-square{
+    background-color: black;
+}
+
+.order-name{
+    color: var(--text-color-light);
+}
+
+.dark-mode .order-name{
+    color: var(--text-color-light);
+}
+
+
+.order-square.non-owner {
+    border: 5px solid var(--border-color-non-owner);
+}
+.order-square.non-owner.completed {
+    border: 5px solid purple;
+}
+
+
+.arrow {
+    fill: white;
+}
+
+.details-overlay-orders {
+    position: absolute;
+    bottom: -60px; 
+    left: 0;
+    width: 100%;
+    height: 80px;  
+    background-color: var(--text-color-light); 
+    text-align: center;
+    padding-top: 5px;  
+    line-height: 0px;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--overlay-text-color-dark); 
+    opacity: 0;        
+    visibility: hidden; 
+    transition: bottom 0.3s ease, opacity 0.3s ease;  
+    cursor: pointer;
+}
+
+.details-overlay-orders svg {
+    display: block;      
+    margin: 0 auto;     
+}
+
+.order-square:hover .details-overlay-orders {
+    bottom: 0;         
+    opacity: 1;        
+    visibility: visible; 
+}
+
+.details-overlay-orders .showing {
+    font-size: 20px;
+}
+
+.order-square.completed {
+    border: 5px solid var(--border-color-completed); 
+    color: black; 
+}
+
+.order-square.completed h3 {
+    color: #0b4c00; 
+}
+
+/* Tmavý režim */
+.dark-mode .order-name {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .order-name.completed {
+    color: var(--completed-order-name-color); 
+}
+
+.dark-mode .order-square {
+    background-color: var(--background-color-dark); 
+}
+
+.dark-mode .order-owner,
+.dark-mode .order-status,
+.dark-mode .order-items {
+    color: var(--overlay-text-color-dark);
+}
+
+.dark-mode .details-overlay-orders {
+    background-color: var(--background-color-light); 
+    color: var(--overlay-text-color-light); 
+}
+
+.dark-mode .arrow {
+    fill: var(--text-color-light); 
+}

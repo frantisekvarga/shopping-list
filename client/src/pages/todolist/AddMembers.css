@@ -1,0 +1,107 @@
+
+.main-add-member-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.second-add-member-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.second-add-member-container h2 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.second-add-member-container input[type="email"] {
+    padding: 12px 20px;
+    margin: 20px 0;
+    font-size: 18px; 
+    color: #444; 
+    background-color: black; 
+    border: 2px solid #FFDE60; 
+
+    outline: none;
+    width: 80%;
+}
+
+
+.second-add-member-container input[type="email"]::placeholder {
+    color: #444;
+    font-family: "Agdasima", sans-serif;
+}
+
+
+.second-add-member-container input[type="email"]:focus {
+    border-color: #FFDE60; 
+}
+
+.confirm-button {
+    color: black;
+    font-family: "Agdasima", sans-serif;
+    font-size: 20px; 
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+    background-color: #FFDE60; 
+    height: 50px;
+
+}
+
+.confirm-button:hover {
+    background-color: #0e0e0e; 
+    color: white;
+}
+
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.quantity-button {
+    color: black;
+    font-family: "Agdasima", sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px; 
+    width: 50px;
+    height: 50px;
+    
+}
+
+.quantity-button:hover {
+    background-color: #0e0e0e;
+    color: white;
+}
+.email-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.add-div button{
+    width: 100%;
+    margin: 10px;
+}

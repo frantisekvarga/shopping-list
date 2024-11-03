@@ -1,0 +1,122 @@
+:root {
+    --background-color-light: white;
+    --background-color-dark: #000000;
+    --text-color-light: black;
+    --text-color-dark: white;
+    --button-bg-light: #FFDE60; 
+    --button-bg-dark: #3e3e3e; 
+    --button-text-light: black;
+    --button-text-dark: white;
+    --input-border-light: #ccc; 
+    --input-border-dark: #666; 
+}
+
+.add-todo-container {
+    color: var(--text-color-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px; 
+    min-height: calc(100vh - 60px); 
+    background-color: var(--background-color-light); 
+}
+
+.add-todo-container form {
+    width: 100%; 
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-todo-container input {
+    padding: 12px 20px; 
+    margin: 10px 0; 
+    font-size: 18px; 
+    color: var(--text-color-light);
+    background-color: var(--background-color-light); 
+    border: 2px solid var(--input-border-light);
+    outline: none; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.add-todo-container input::placeholder {
+    color: #AAAAAA; 
+    font-family: "Agdasima", sans-serif; 
+}
+
+.add-todo-container input:focus {
+    border-color: var(--button-bg-light); 
+}
+
+.add-todo-container button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    background-color: var(--button-bg-light); 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    color: var(--button-text-light); 
+    margin-top: 10px; 
+    width: 100%; 
+}
+
+.add-todo-container button:hover {
+    background-color: #0e0e0e; 
+    color: white; 
+}
+
+
+.dark-mode .add-todo-container {
+    color: var(--text-color-dark); 
+    background-color: var(--background-color-dark);
+}
+
+.dark-mode .add-todo-container input {
+    color: var(--text-color-dark); 
+    background-color: var(--background-color-dark); 
+    border: 2px solid var(--input-border-dark); 
+}
+
+.dark-mode .add-todo-container input:focus {
+    border-color: var(--button-bg-dark); 
+}
+
+.dark-mode .add-todo-container button {
+    color: var(--button-text-dark); 
+    background-color: var(--button-bg-dark); 
+}
+
+.dark-mode .add-todo-container button:hover {
+    background-color: #0e0e0e;
+    color: white; 
+}
+
+
+@media (max-width: 768px) {
+    .add-todo-container input {
+        font-size: 16px; 
+        padding: 10px 15px; 
+    }
+    
+    .add-todo-container button {
+        font-size: 16px; 
+        padding: 8px 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .add-todo-container input {
+        font-size: 14px; 
+        padding: 8px 10px; 
+    }
+    
+    .add-todo-container button {
+        font-size: 14px; 
+        padding: 6px 12px; 
+    }
+}

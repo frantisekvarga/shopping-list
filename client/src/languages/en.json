@@ -1,0 +1,123 @@
+{
+    "welcome": {
+        "title": "Welcome",
+        "subtitle": "Welcome to our website"
+    },
+    "login": "Login",
+    "login-title": "Login",
+    "username": "Username",
+    "user-email": "Email",
+    "password": "Password",
+    "register": "Register",
+    "register-title": "Registration",
+    "logout": "Logout",
+    "add_new_list": "Add New List",
+    "all_todos": "All Tasks",
+    "find_your_todo": "Find Your Task",
+    "theme-modes": {
+        "light": "Light",
+        "dark": "Dark"
+    },
+    "home": "Home",
+    "home-description-app": "Our To-Do List app is a practical shopping list that allows users to manage tasks efficiently. Each list is owned by a user who has full control over the tasks, with only them being able to add or delete tasks. Members of the list can contribute new tasks but do not have the right to delete existing ones. The app is designed with a focus on user-friendliness, featuring an intuitive interface that enables quick navigation. Users can see their lists and mark tasks as completed, which helps track progress. Overall, the To-Do List is a powerful tool that promotes collaboration and efficient task organization.",
+    "footer": {
+        "home-description-app": "Our To-Do List app is a practical shopping list that allows users to manage tasks efficiently. Each list is owned by a user who has full control over the tasks, with only them being able to add or delete tasks. Members of the list can contribute new tasks but do not have the right to delete existing ones. The app is designed with a focus on user-friendliness, featuring an intuitive interface that enables quick navigation. Users can see their lists and mark tasks as completed, which helps track progress. Overall, the To-Do List is a powerful tool that promotes collaboration and efficient task organization.",
+        "about_us_header": "About Us",
+        "about_us": "Our To-Do List app is designed for effective task and shopping management. It allows the owner to fully control tasks, while members can contribute but do not have the right to delete. The intuitive interface ensures ease of use and clear tracking of progress.",
+        "quick_links": {
+            "header": "Quick Links",
+            "contact": "Contact",
+            "faq": "Frequently Asked Questions"
+        },
+        "contact": {
+            "header": "Contact",
+            "email": "Email",
+            "phone": "Phone"
+        },
+        "all-rights-reserved": "All rights reserved"
+    },
+    "server-errror": {
+        "error-message": "Invalid response from the server",
+        "error": "Error"
+    },
+    "todo-list": {
+        "title": "Task List",
+        "add-new-todo": "Add New Task",
+        "add-new-todo-header": "Add New List",
+        "add-new-todo-create": "Create",
+        "add-new-todo-create-loading": "Creating...",
+        "add-new-todo-list-create-name": "List Name",
+        "todo-owner": "Task Owner",
+        "todo-name": "Task Name",
+        "todo-description": "Task Description",
+        "todo-status": "Status",
+        "todo-actions": "Actions",
+        "todo-statuses": {
+            "completed": "Completed",
+            "not-completed": "Not Completed"
+        },
+        "todo-actions": {
+            "edit": "Edit",
+            "delete": "Delete"
+        },
+        "no-todos": "No Tasks",
+        "todo-items": "Tasks"
+    },
+    "success-page": {
+        "success-message": "Successful Operation",
+        "back-to-home": "Back to Home Page"
+    },
+    "find-todo-page": {
+        "find-todo-header": "Find Your Task",
+        "your-created-todos": "Your Created Tasks",
+        "member-of-todos": "List Member"
+    },
+    "my-todos-page": {
+        "my-todos-header": "My Tasks",
+        "show-all": "Show All",
+        "show-completed": "Show Completed",
+        "show-not-completed": "Show Not Completed",
+        "no-available-todos": "No Available Tasks"
+    },
+    "avaible-todos-page": {
+        "avaible-todos-header": "Available Tasks"
+    },
+    "list-sqare-component": {
+        "list-name": "List Name",
+        "list-owner": "Owner",
+        "list-members": "Members",
+        "no-members": "No Members",
+        "show-todos": "Show Tasks"
+    },
+    "todo-detail-page": {
+        "new-task-name": "New Task Name",
+        "new-task-description": "New Task Description",
+        "delete-todo": "Delete Task",
+        "delete-list": "Delete List",
+        "no-tasks": "No Tasks",
+        "mark-as-archieved": "Mark as Archived",
+        "mark-as-not-archieved": "Mark as Not Archived",
+        "add-members": "Add Members",
+        "mark-as-completed": "Mark as Completed",
+        "mark-as-not-completed": "Mark as Not Completed",
+        "leave-list": "Leave List",
+        "yes-delete": "Yes, delete",
+        "cancel": "Cancel",
+        "confirm-delete-list": "Are you sure you want to delete this list?"
+
+    },
+    "add-members-page": {
+        "add-members-header": "Add Members",
+        "member-email": "Member Email",
+        "add-member-trough-email": "Add Member by Email",
+        "add-members": "Add Selected Members",
+        "current-members": "Current Members",
+        "no-members-yet": "No Members Yet",
+        "delete-member": "Delete Member",
+        "emails-error": "Some emails are duplicated. Please enter unique emails."
+    },"save-title-name": "Save title name",
+    "not-found":{
+        "heading": "Page not found",
+        "message": "Page you are looking for is not found"
+     }
+}

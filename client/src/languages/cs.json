@@ -1,0 +1,124 @@
+{
+  "welcome": {
+      "title": "Vítejte",
+      "subtitle": "Vítejte na naší stránce"
+  },
+  "login": "Přihlásit se",
+  "login-title": "Přihlášení",
+  "username": "Uživatelské jméno",
+  "user-email": "E-mail",
+  "password": "Heslo",
+  "register": "Registrovat se",
+  "register-title": "Registrace",
+  "logout": "Odhlásit se",
+  "add_new_list": "Přidat nový seznam",
+  "all_todos": "Všechny úkoly",
+  "find_your_todo": "Najděte svůj úkol",
+  "theme-modes": {
+      "light": "Světlý",
+      "dark": "Tmavý"
+  },
+  "home": "Domov",
+  "home-description-app": "Naše aplikace To-Do List je praktický nákupní seznam, který umožňuje uživatelům efektivně spravovat úkoly. Každý seznam je vlastněn uživatelem, který má plnou kontrolu nad úkoly, přičemž pouze on může přidávat nebo mazat úkoly. Členové seznamu mohou přispívat novými úkoly, ale nemají právo mazat existující. Aplikace je navržena s důrazem na uživatelskou přívětivost, s intuitivním rozhraním, které umožňuje rychlé navigování. Uživatelé mohou vidět své seznamy a označovat úkoly jako dokončené, což pomáhá při sledování pokroku. Celkově je To-Do List mocný nástroj, který podporuje spolupráci a efektivní organizaci úkolů.",
+  "footer": {
+      "home-description-app": "Naše aplikace To-Do List je praktický nákupní seznam, který umožňuje uživatelům efektivně spravovat úkoly. Každý seznam je vlastněn uživatelem, který má plnou kontrolu nad úkoly, přičemž pouze on může přidávat nebo mazat úkoly. Členové seznamu mohou přispívat novými úkoly, ale nemají právo mazat existující. Aplikace je navržena s důrazem na uživatelskou přívětivost, s intuitivním rozhraním, které umožňuje rychlé navigování. Uživatelé mohou vidět své seznamy a označovat úkoly jako dokončené, což pomáhá při sledování pokroku. Celkově je To-Do List mocný nástroj, který podporuje spolupráci a efektivní organizaci úkolů.",
+      "about_us_header": "O nás",
+      "about_us": "Naše aplikace To-Do List je navržena na efektivní správu úkolů a nákupů. Umožňuje vlastníkovi plně kontrolovat úkoly, přičemž členové mohou přispívat, ale nemají právo mazat. Intuitivní rozhraní zajišťuje jednoduché používání a přehledné sledování pokroku.",
+      "quick_links": {
+          "header": "Rychlé odkazy",
+          "contact": "Kontakt",
+          "faq": "Často kladené otázky"
+      },
+      "contact": {
+          "header": "Kontakt",
+          "email": "E-mail",
+          "phone": "Telefon"
+      },
+      "all-rights-reserved": "Všechna práva vyhrazena"
+  },
+  "server-errror": {
+      "error-message": "Neplatná odpověď ze serveru",
+      "error": "Chyba"
+  },
+  "todo-list": {
+      "title": "Seznam úkolů",
+      "add-new-todo": "Přidat nový úkol",
+      "add-new-todo-header": "Přidejte nový seznam",
+      "add-new-todo-create": "Vytvořit",
+      "add-new-todo-create-loading": "Vytváření...",
+      "add-new-todo-list-create-name": "Název seznamu",
+      "todo-owner": "Majitel úkolu",
+      "todo-name": "Název úkolu",
+      "todo-description": "Popis úkolu",
+      "todo-status": "Stav",
+      "todo-actions": "Akce",
+      "todo-statuses": {
+          "completed": "Dokončeno",
+          "not-completed": "Nedokončeno"
+      },
+      "todo-actions": {
+          "edit": "Upravit",
+          "delete": "Smazat"
+      },
+      "no-todos": "Žádné úkoly",
+      "todo-items": "Úkoly"
+  },
+  "success-page": {
+      "success-message": "Úspěšná operace",
+      "back-to-home": "Zpět na domovskou stránku"
+  },
+  "find-todo-page": {
+      "find-todo-header": "Najděte svůj úkol",
+      "your-created-todos": "Vaše vytvořené úkoly",
+      "member-of-todos": "Člen seznamu"
+  },
+  "my-todos-page": {
+      "my-todos-header": "Moje úkoly",
+      "show-all": "Zobrazit všechny",
+      "show-completed": "Zobrazit dokončené",
+      "show-not-completed": "Zobrazit nedokončené",
+      "no-available-todos": "Žádné dostupné úkoly"
+  },
+  "avaible-todos-page": {
+      "avaible-todos-header": "Dostupné úkoly"
+  },
+  "list-sqare-component": {
+      "list-name": "Název seznamu",
+      "list-owner": "Majitel",
+      "list-members": "Členové",
+      "no-members": "Žádní členové",
+      "show-todos": "Zobrazit úkoly"
+  },
+  "todo-detail-page": {
+      "new-task-name": "Název nového úkolu",
+      "new-task-description": "Popis nového úkolu",
+      "delete-todo": "Smazat úkol",
+      "delete-list": "Smazat seznam",
+      "no-tasks": "Žádné úkoly",
+      "mark-as-archieved": "Označit jako archivované",
+      "mark-as-not-archieved": "Označit jako nearchivované",
+      "add-members": "Přidat členy",
+      "mark-as-completed": "Označit jako dokončené",
+      "mark-as-not-completed": "Označit jako nedokončené",
+      "leave-list": "Opustit seznam",
+      "yes-delete": "Ano, smazat",
+    "cancel": "Zrušit",
+        "confirm-delete-list": "Opravdu chcete smazat tento seznam?"
+
+  },
+  "add-members-page": {
+      "add-members-header": "Přidejte členy",
+      "member-email": "E-mail člena",
+      "add-member-trough-email": "Přidejte člena pomocí e-mailu",
+      "add-members": "Přidejte označené členy",
+      "current-members": "Současní členové",
+      "no-members-yet": "Zatím žádní členové",
+      "delete-member": "Smazat člena",
+      "emails-error": "Některé e-maily se opakují. Prosím, zadejte jedinečné e-maily."
+  },
+  "save-title-name": "Uložit název",
+  "not-found":{
+        "heading": "Stránka nenalezena",
+        "message": "Stránka, kterou hledáte, nebyla nalezena. Zkontrolujte prosím URL adresu a zkuste to znovu."
+     }
+}

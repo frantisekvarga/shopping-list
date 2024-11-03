@@ -1,0 +1,375 @@
+:root {
+    --background-color-light: white;
+    --background-color-dark: #000000;
+    --text-color-light: black;
+    --text-color-dark: white;
+    --button-bg-light: #FFDE60; 
+    --button-bg-dark: #3e3e3e; 
+    --button-text-light: black;
+    --button-text-dark: white;
+    --input-border-light: #ccc; 
+    --input-border-dark: #666; 
+}
+
+.tasks-heading{
+    color: var(--text-color-light);
+}
+
+.toggle-complete-button{
+    color: var(--text-color-light);
+}
+
+
+.todo-detail-container {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    min-height: calc(100vh - 60px);
+    
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.task-item{
+    
+    margin: 0 auto;
+}
+
+.pie-chart{
+    display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-direction: column;  
+  width: 100%;
+
+}
+.each-task-custom-css .task-item{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #444;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 1000;
+}
+.task-item-buttons{
+    display: flex;
+    flex-direction: row;
+
+}
+.task-item-buttons button{
+    margin: 0 10px;
+}
+
+.task-item p {
+    color: #767676;
+    font-size: 20px;
+}
+.task-item h4 {
+    margin: 0 auto;
+    cursor: pointer;
+    
+    font-size: 40px;
+    color: var(--text-color-light);
+}
+
+.second-detail-container {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #767676;
+    background-color:var(--input-border-light) ;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--button-text-light);
+    cursor: pointer;
+    padding: 0 10px;
+}
+.todo-title:hover{
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    background-color: var(--text-color-light);
+    color: var(--text-color-dark);
+}
+
+
+
+.todo-input {
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: var(--button-text-light);
+    
+    
+    border: 2px solid #FFDE60;
+    
+    outline: none;
+    width: 100%;
+    max-width: 600px;
+}
+
+.todo-input::placeholder {
+    color: var( --button-bg-dark);
+    font-family: "Agdasima", sans-serif;
+}
+
+
+.todo-input:focus {
+    border-color: #FFDE60;
+}
+
+.add-task-button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #FFDE60;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: black;
+   
+    margin-top: 10px;
+}
+
+.add-task-button:hover {
+    background-color: #000;
+    color: white;
+    transform: scale(1.05);
+}
+
+.todo-detail-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px 0;
+    
+
+    border-bottom: 1px solid #444;
+}
+
+.task-item span {
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.task-item span:hover {
+    color: #FFDE60;
+}
+
+
+
+.completed-btn{
+
+    background-color: transparent; 
+    border: none; 
+    color: inherit; 
+    font: inherit; 
+    cursor: pointer; 
+    padding: 10px 20px;
+    margin: 0; 
+
+    cursor: pointer;
+    background-color: #FFDE60;
+    color: black; 
+}
+.completed-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+.no-completed-btn{
+    background-color: transparent; 
+    border: none;
+    font: inherit; 
+    cursor: pointer; 
+    padding: 10px 20px;
+    margin: 0;  
+
+    cursor: pointer;
+    
+
+    border: 2px solid #FFDE60; 
+    background-color: transparent;
+    color: var(--text-color-light);
+
+
+}
+.no-completed-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+
+.delete-task-button {
+    padding: 5px 12px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+   
+}
+
+.delete-task-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+.list-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.delete-list-button,
+.leave-list-button,
+.complete-list-button ,
+.members-button{
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #FFDE60;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: black;
+    text-decoration: none;
+    
+    
+    margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.delete-list-button:hover,
+.leave-list-button:hover,
+.complete-list-button:hover ,
+.members-button:hover {
+    
+    color: white;
+    background-color: #000;
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .todo-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .todo-detail-container{
+        width: 80vw;
+    }
+    .todo-title {
+        font-size: 1.8rem;
+    }
+
+    .add-task-button,
+    .delete-list-button,
+    .leave-list-button,
+    .complete-list-button,
+    .members-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .task-item {
+        font-size: 16px;
+        
+    }
+
+    
+
+    .todo-form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .todo-title {
+        font-size: 1.5rem;
+    }
+
+    .todo-input {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+
+    .add-task-button,
+    .delete-list-button,
+    .leave-list-button,
+    .complete-list-button,
+    .members-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    
+}
+
+
+/* Dark mode  */
+
+.dark-mode .todo-title{
+    color: var(--text-color-dark);
+}
+.dark-mode .tasks-heading{
+    color: var(--text-color-dark);
+}
+.dark-mode .task-item h4{
+    color: var(--text-color-dark);
+}
+.dark-mode .no-completed-btn{
+    color: var(--button-text-dark);
+}
+.dark-mode .second-detail-container{
+    background-color: var(--text-color-light);
+}
+.dark-mode .todo-title:hover{
+    color: var(--button-bg-light);
+}
+
+.each-task-custom-css h4:hover{
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    
+    color: var(--button-bg-light);
+}

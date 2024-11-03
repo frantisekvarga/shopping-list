@@ -1,0 +1,138 @@
+:root {
+    --background-color-light: white;
+    --background-color-dark: #000000;
+    --text-color-light: black;
+    --text-color-dark: white;
+    --button-bg-light: #FFDE60; 
+    --button-bg-dark: #3e3e3e; 
+    --button-text-light: black;
+    --button-text-dark: white;
+    --input-border-light: #ccc; 
+    --input-border-dark: #666; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+
+.main-login-page-container {
+    min-height: calc(100vh - 60px);
+    color: var(--text-color-light);
+    font-size: 10px;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    padding: 0 20px; 
+}
+
+.second-login-page-container {
+    margin-top: 10%;
+}
+
+.second-login-page-container h1 {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-size: 2rem; 
+    text-align: center;
+}
+
+.login-form-container {
+    display: flex;
+    background-color: var(--background-color-light);
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 500px;
+    min-height: 10vh;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    padding: 20px; 
+}
+
+.login-form-container form input,
+.login-form-container form select,
+.login-form-container form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--input-border-light);
+    font-size: 1rem;
+}
+
+.login-form button {
+    color: var(--button-text-light);
+    background-color: var(--button-bg-light);
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem; 
+    margin-top: 10px;
+    padding: 10px 0; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0e0e0e;
+    color: white;
+}
+
+.second-login-page-container p {
+    text-align: center;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    .second-login-page-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .login-form button {
+        font-size: 1.2rem; 
+        padding: 10px 40px; 
+    }
+    
+    .login-form-container {
+        margin-top: 20%; 
+    }
+}
+
+
+.dark-mode .main-login-page-container {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .login-form-container {
+    background-color: var(--background-color-dark);
+}
+
+.dark-mode .login-form-container form input,
+.dark-mode .login-form-container form select,
+.dark-mode .login-form-container form textarea {
+    border: 1px solid var(--input-border-dark);
+}
+
+.dark-mode .login-form button {
+    color: var(--button-text-dark);
+    background-color: var(--button-bg-dark);
+}
+
+.dark-mode .login-form button {
+    color: var(--button-text-light);
+    background-color: var(--button-bg-light);
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem; 
+    margin-top: 10px;
+    padding: 10px 0; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .login-form button:hover {
+    background-color: #0e0e0e;
+    color: white;
+}

@@ -1,0 +1,82 @@
+:root {
+    --background-color-light: white;
+    --background-color-dark: #000000;
+    --text-color-light: black;
+    --text-color-dark: white;
+    --button-bg-light: #FFDE60; 
+    --button-bg-dark: #3e3e3e; 
+    --button-text-light: black;
+    --button-text-dark: white;
+    --input-border-light: #ccc; 
+    --input-border-dark: #666; 
+}
+
+.main-orders-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 60px);
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5%;
+    background-color: var(--background-color-light); 
+    color: var(--text-color-light);
+}
+
+.main-orders-container h1 {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+}
+
+.options-buttons button {
+    color: var(--button-text-light); 
+    margin: 0 20px;
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 10px; 
+    padding: 10px 90px; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    background-color: var(--button-bg-light); 
+}
+
+.options-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.options-buttons button:hover {
+    background-color: #0e0e0e; 
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .options-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.dark-mode .main-orders-container {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+.dark-mode .main-orders-container h1 {
+    color: var(--text-color-dark);
+}
+
+.dark-mode .options-buttons button {
+    color: var(--button-text-dark);
+    background-color: var(--button-bg-dark);
+}
+
+.dark-mode .options-buttons button:hover {
+    background-color: #0e0e0e;
+    color: var(--button-text-dark);
+}

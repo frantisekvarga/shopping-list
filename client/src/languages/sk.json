@@ -1,0 +1,126 @@
+{
+    "welcome": {
+        "title": "Vitajte",
+        "subtitle": "Vitajte na našej stránke"
+    },
+    "login": "Prihlásiť sa",
+    "login-title": "Prihlásenie",
+    "username": "Používateľské meno",
+    "user-email": "E-mail",
+    "password": "Heslo",
+
+    "register": "Registrovať sa",
+    "register-title": "Registrácia",
+    "logout": "Odhlásiť sa",
+    "add_new_list": "Pridať nový zoznam",
+    "all_todos": "Všetky úlohy",
+    "find_your_todo": "Nájdite svoju úlohu",
+    "theme-modes": {
+        "light": "Svetlý",
+        "dark": "Tmavý"
+    },
+    "home":"Domov",
+      "home-description-app": "Naša aplikácia To-Do List je praktický nákupný zoznam, ktorý umožňuje používateľom efektívne spravovať úlohy. Každý zoznam je vlastnený používateľom, ktorý má plnú kontrolu nad úlohami, pričom iba on môže pridávať alebo mazať úlohy. Členovia zoznamu môžu prispievať novými úlohami, ale nemajú právo mazať existujúce. Aplikácia je navrhnutá s dôrazom na používateľskú prívetivosť, s intuitívnym rozhraním, ktoré umožňuje rýchle navigovanie. Používatelia môžu vidieť svoje zoznamy a označovať úlohy ako dokončené, čo pomáha pri sledovaní pokroku. Celkovo je To-Do List mocný nástroj, ktorý podporuje spoluprácu a efektívnu organizáciu úloh.",
+    "footer":{
+        "home-description-app": "Naša aplikácia To-Do List je praktický nákupný zoznam, ktorý umožňuje používateľom efektívne spravovať úlohy. Každý zoznam je vlastnený používateľom, ktorý má plnú kontrolu nad úlohami, pričom iba on môže pridávať alebo mazať úlohy. Členovia zoznamu môžu prispievať novými úlohami, ale nemajú právo mazať existujúce. Aplikácia je navrhnutá s dôrazom na používateľskú prívetivosť, s intuitívnym rozhraním, ktoré umožňuje rýchle navigovanie. Používatelia môžu vidieť svoje zoznamy a označovať úlohy ako dokončené, čo pomáha pri sledovaní pokroku. Celkovo je To-Do List mocný nástroj, ktorý podporuje spoluprácu a efektívnu organizáciu úloh.",
+        "about_us_header": "O nás",
+        "about_us": "Naša aplikácia To-Do List je navrhnutá na efektívne spravovanie úloh a nákupov. Umožňuje vlastníkovi plne kontrolovať úlohy, pričom členovia môžu prispievať, ale nemajú právo mazať. Intuitívne rozhranie zabezpečuje jednoduché používanie a prehľadné sledovanie pokroku.",
+        "quick_links":{
+            "header": "Rýchle odkazy",
+            "contact": "Kontakt",
+            "faq": "Často kladené otázky"
+        },
+        "contact": {
+            "header": "Kontakt",
+            "email": "E-mail",
+            "phone": "Telefón" 
+        },
+        "all-rights-reserved": "Všetky práva vyhradené"
+
+    },
+    "server-errror":{
+        "error-message": "Neplatna odpoveď zo servera",
+        "error": "Chyba"
+    },
+    "todo-list":{
+        "title": "Zoznam úloh",
+        "add-new-todo": "Pridať novú úlohu",
+        "add-new-todo-header": "Pridajte nový list",
+        "add-new-todo-create": "Vytvoriť",
+        "add-new-todo-create-loading": "Vytváranie...",
+        "add-new-todo-list-create-name": "Názov zoznamu",
+        "todo-owner": "Vlastník úlohy",
+        "todo-name": "Názov úlohy",
+        "todo-description": "Popis úlohy",
+        "todo-status": "Stav",
+        "todo-actions": "Akcie",
+        "todo-statuses":{
+            "completed": "Dokončené",
+            "not-completed": "Nedokončené"
+        },
+        "todo-actions":{
+            "edit": "Upraviť",
+            "delete": "Vymazať"
+        },
+        "no-todos": "Žiadne úlohy",
+        "todo-items": "Úlohy"
+    },
+    "success-page":{
+        "success-message": "Úspešná operácia",
+        "back-to-home": "Späť na domovskú stránku"
+    },
+    "find-todo-page":{
+        "find-todo-header": "Nájdite svoju úlohu",
+        "your-created-todos": "Vaše vytvorené úlohy",
+        "member-of-todos": "Člen zoznamu"
+    },
+    "my-todos-page":{
+        "my-todos-header": "Moje úlohy",
+        "show-all": "Zobraziť všetky",
+        "show-completed": "Zobraziť dokončené",
+        "show-not-completed": "Zobraziť nedokončené",
+        "no-available-todos": "Žiadne dostupné úlohy"
+    },
+    "avaible-todos-page":{
+        "avaible-todos-header": "Dostupné úlohy"
+    },
+     "list-sqare-component":{
+        "list-name": "Názov zoznamu",
+        "list-owner": "Vlastník",
+        "list-members": "Členovia",
+        "no-members": "Žiadni členovia",
+        "show-todos": "Zobraziť úlohy"
+     },
+     "todo-detail-page":{
+        "new-task-name": "Názov novej úlohy",
+        "new-task-description": "Popis novej úlohy",
+        "delete-todo": "Vymazať úlohu",
+        "delete-list": "Vymazať zoznam",
+        "no-tasks": "Žiadne úlohy",
+        "mark-as-archieved": "Označiť ako archivované",
+        "mark-as-not-archieved": "Označiť ako nearchivované", 
+        "add-members": "Pridať členov",
+        "mark-as-completed": "Označiť ako dokončené",
+        "mark-as-not-completed": "Označiť ako nedokončené",
+        "leave-list": "Opustiť zoznam",
+        "yes-delete": "Áno, vymazať",
+        "cancel": "Zrušiť",
+        "confirm-delete-list": "Naozaj chcete vymazať tento zoznam?"
+     },
+     "add-members-page":{
+        "add-members-header": "Pridajte členov",
+        "member-email": "E-mail člena",
+        "add-member-trough-email": "Pridajte člena pomocou e-mailu",
+        "add-members":"Pridajte označených členov",
+        "current-members": "Súčasní členovia",
+        "no-members-yet": "Zatiaľ žiadni členovia",
+        "delete-member": "Vymazať člena",
+        "emails-error": "Niektoré emaily sa opakujú. Prosím, zadajte jedinečné emaily."
+     },
+     "save-title-name": "Uložit názov",
+     "not-found":{
+        "heading": "Stránka nebola nájdená",
+        "message": "Stránka, ktorú hľadáte, neexistuje. Skontrolujte URL a skúste to znova."
+     }
+    
+}

@@ -1,0 +1,9 @@
+.not-found{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: calc(100vh - 60px);
+    margin: 0 auto;
+    flex-direction: column;
+    color: white;
+}
