@@ -31,25 +31,27 @@ export const UserProvider = ({ children }) => {
         try {
           let decodedUser = jwtDecode(token); 
           const currentTime = Date.now() / 1000;
-
+  
+          
           if (decodedUser.exp < currentTime) {
-         
             token = await refreshAccessToken();
             decodedUser = jwtDecode(token);
           }
-
+  
           setUser(decodedUser);
         } catch (error) {
           console.error('Error decoding token:', error);
           logout();
         }
       }
-
+  
       setIsLoading(false);
     };
-
+  
     initAuth();
   }, []);
+  
+  
 
   const login = (userData) => {
     const { token } = userData;

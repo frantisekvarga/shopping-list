@@ -10,7 +10,6 @@ html {
 
 body {
     background-color: var(--background-color);
-    
 }
 
 .dark-mode {
@@ -33,17 +32,30 @@ body {
 .second-home-container-box {
     display: flex; 
     align-items: center; 
-    max-width: 800px; 
-    width: 100%; 
+    justify-content: center; 
+    max-width: 50vw;  
+    margin: 0 auto;
     padding: 20px; 
-
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .icon-container {
     flex: 0 0 auto; 
     margin-right: 20px; 
+    width: auto; 
+    max-width: 30%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden; /* Prevent icon from overflowing */
+}
+
+.icon-container svg { /* Assuming MyIcon is an SVG or similar element */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensure icon scales without distortion */
 }
 
 .vertical-line {
@@ -56,11 +68,13 @@ body {
 .third-home-container-box {
     display: flex;
     flex-direction: column;
-    color: white;
-
+    justify-content: center; 
+    align-items: center; 
+    color: var(--text-color);
     font-family: "Agdasima", sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 100%;
 }
 
 .main-home-container-box button {
@@ -69,10 +83,8 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 30px; 
-
     margin-top: 10px; 
     padding: 10px 90px; 
-    
     border: none; 
     cursor: pointer; 
     transition: background-color 0.3s;
@@ -88,7 +100,6 @@ body {
     transition: background-color 0.3s; 
     margin: 0 5px; 
 }
-
 
 .second-home-btn {
     background-color: #FFDE60; 
@@ -110,46 +121,45 @@ body {
     color: white;
 }
 
-
-
-
-
 .dark-mode .first-home-btn{
-
     background-color: var(--text-color);
 }
 
-
-
-.main-home-container-box button:hover {
-    background-color: #0e0e0e; 
-    color: white;
-}
-.home-buttons{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 @media (max-width: 800px) {
-
-    .second-home-container-box{
-        flex-direction: column ;
+    .second-home-container-box {
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 90vw; 
     }
-    .vertical-line{
+
+    .vertical-line {
         height: 2px;
-        width: 50vw; 
-
+        width: 80%; 
+        margin-right: 0;
+        margin-bottom: 20px; 
     }
-    .third-home-container-box{
+
+    .third-home-container-box {
         margin: 0 auto;
-    }
-    .third-home-container-box p {
-         text-align: center;
+        width: 100%; 
+        text-align: center; 
     }
 
+    .home-buttons {
+        width: 100%; 
+        flex-direction: column; 
+        margin-top: 20px;
+    }
+
+    .first-home-btn,
+    .second-home-btn {
+        padding: 10px 50px; 
+        font-size: 24px; 
+    }
 }
+
 @media (max-width: 545px) {
-    .home-buttons{
+    .home-buttons {
         flex-direction: column;
     }
 }

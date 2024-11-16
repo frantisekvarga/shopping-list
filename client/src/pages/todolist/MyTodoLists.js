@@ -3,24 +3,23 @@ import { UserContext } from '../../context/UserProvider';
 import OrderSquare from '../../components/OrderSquare'; 
 import "./MyTodoLists.css"; 
 import Loading from '../../icons/Loading';
-import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios'; 
+import { Link, useNavigate } from 'react-router-dom';
 import { TodoContext } from '../../context/TodoProvider';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
 const MyTodoLists = () => {
   const { user, isLoading } = useContext(UserContext);
   const [todoLists, setTodoLists] = useState([]); 
-  const { fetchUserTodoLists} = useContext(TodoContext)
+  const { fetchUserTodoLists  , fetchTodoLists} = useContext(TodoContext);
   const [error, setError] = useState(null); 
   const [loading, setLoading] = useState(true); 
   const [showCompleted, setShowCompleted] = useState(null); 
   const navigate = useNavigate();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
 
   useEffect(() => {
-    if (!isLoading && !user) {
+    if (!user && !isLoading) {
       navigate('/user-login');
     }
   }, [user, isLoading, navigate]);
@@ -28,11 +27,14 @@ const MyTodoLists = () => {
   useEffect(() => {
     const fetchTodoLists = async () => {
       setLoading(true); 
-    
-      
+      if (!user) {
+        setError('User is not authenticated');
+        setLoading(false);
+        return;
+      }
 
       try {
-        const response = await  fetchUserTodoLists(user.id); 
+        const response = await fetchUserTodoLists(user.id); 
         setTodoLists(response); 
       } catch (error) {
         console.error('Error fetching todo lists:', error);
@@ -42,8 +44,11 @@ const MyTodoLists = () => {
       }
     };
     
-    fetchTodoLists();
-  }, [user]);
+    
+    if (user) {
+      fetchTodoLists()
+    }
+  }, [user, fetchUserTodoLists]);
 
   const filteredTodoLists = todoLists.filter(list => {
     if (showCompleted === null) {
@@ -88,7 +93,7 @@ const MyTodoLists = () => {
           <div>{t('my-todos-page.no-available-todos')}</div> 
         )}
       </div>
-
+      
       <Link to="/add-todo" className="add-new-list">{t('todo-list.add-new-todo-header')}</Link>
     </div>
   );

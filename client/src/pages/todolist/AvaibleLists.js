@@ -9,16 +9,16 @@ import { useTranslation } from 'react-i18next';
 
 const AvailableLists = () => {
   const { user, isLoading } = useContext(UserContext); 
-  const {fetchAvailableTodoLists } = useContext(TodoContext);
+  const { fetchAvailableTodoLists  , fetchTodoLists} = useContext(TodoContext);
   const [error, setError] = useState(null); 
   const [loading, setLoading] = useState(true); 
   const [showCompleted, setShowCompleted] = useState(null); 
   const navigate = useNavigate();
-  const [todoLists , setTodoLists] = useState([])
-  const { t, i18n } = useTranslation();
+  const [todoLists , setTodoLists] = useState([]);
+  const { t } = useTranslation();
 
+  // Kontrola, či je používateľ prihlásený
   useEffect(() => {
-
     if (!isLoading && !user) {
       navigate('/user-login');
     }
@@ -27,13 +27,15 @@ const AvailableLists = () => {
   useEffect(() => {
     const fetchTodoLists = async () => {
       setLoading(true); 
-
-
-      
+      if (!user) {
+        setError('User is not authenticated');
+        setLoading(false);
+        return;
+      }
 
       try {
         const response = await fetchAvailableTodoLists(user.id); 
-        setTodoLists(response)
+        setTodoLists(response);
       } catch (error) {
         console.error('Error fetching todo lists:', error);
         setError('Failed to load todo lists');
@@ -42,8 +44,11 @@ const AvailableLists = () => {
       }
     };
 
-    fetchTodoLists();
-  }, [user, fetchAvailableTodoLists]); 
+    // Ak je používateľ načítaný, spusti fetch
+    if (user) {
+      fetchTodoLists();
+    }
+  }, [user, fetchAvailableTodoLists]);
 
   const filteredTodoLists = todoLists.filter(list => {
     if (showCompleted === null) return true; 
@@ -82,14 +87,10 @@ const AvailableLists = () => {
               currentUserId={user.id} 
             />
           ))
-        ) : (<>
-              <br />
-              <div>{t('my-todos-page.no-available-todos')}</div> 
-            </>
-          
+        ) : (
+          <div>{t('my-todos-page.no-available-todos')}</div>
         )}
       </div>
-      <br />
       <Link to="/add-todo" className="add-new-list">{t('todo-list.add-new-todo-header')}</Link>
     </div>
   );

@@ -55,7 +55,7 @@ export const TodoProvider = ({ children }) => {
 
   const fetchTodoLists = async (userId) => {
     try {
-        const response = await axios.get(`/api/todolists/user/${user.id}` , axiosConfig);
+        const response = await axios.get(`/api/lists/${user.id}` , axiosConfig);
         return response.data;
     } catch (error) {
         throw new Error('Error fetching todo lists: ' + error.message);

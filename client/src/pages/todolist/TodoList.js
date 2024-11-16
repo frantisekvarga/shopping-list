@@ -5,12 +5,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import Loading from '../../icons/Loading';
 import './TodoList.css';
 import { TodoContext } from '../../context/TodoProvider';
-import axios from 'axios';
+
 import { useTranslation } from 'react-i18next';
 
 const TodoList = () => {
   const { user, isLoading } = useContext(UserContext);
-  const { removeTodoList } = useContext(TodoContext);
+  const { removeTodoList  , fetchTodoLists} = useContext(TodoContext);
   const navigate = useNavigate();
   const token = localStorage.getItem('userToken');
   const { t, i18n } = useTranslation();
@@ -28,18 +28,14 @@ const TodoList = () => {
   }, [user, isLoading, navigate]);
 
   useEffect(() => {
-    const fetchTodoLists = async () => {
+    const loadTodoLists = async () => {
       if (!user || !user.id) {
         return;
       }
 
       try {
-        const response = await axios.get(`/api/lists/${user.id}`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        setTodoLists(response.data);
+        const fetchedTodoLists = await fetchTodoLists(user.id); 
+        setTodoLists(fetchedTodoLists);
         setLoading(false);
       } catch (err) {
         console.error('Error fetching todo lists:', err);
@@ -49,9 +45,9 @@ const TodoList = () => {
     };
 
     if (token) {
-      fetchTodoLists();
+      loadTodoLists();
     }
-  }, [user, token]);
+  }, [user, token, fetchTodoLists]);
 
   if (isLoading || loading) {
     return <div><Loading /></div>; 

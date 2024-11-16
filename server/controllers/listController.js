@@ -1,5 +1,5 @@
 
-const TodoList = require ("../models/toDoList.js")
+const TodoList = require ("../models/todoList.js")
 const Item = require ("../models/item.js")
 const mongoose = require('mongoose');
 const User = require("../models/users.js")
@@ -331,18 +331,23 @@ exports.leaveTodoList = async (req, res) => {
 exports.getTodoListsByOwner = async (req, res) => {
     const userId = req.params.userId;
 
+    
+    if (!mongoose.Types.ObjectId.isValid(userId)) {
+        return res.status(400).json({ message: 'Invalid user ID' });
+    }
+
     try {
+        
         const todoLists = await TodoList.find({ owner: userId })
             .populate('owner', 'username')
             .populate('members', 'username');
 
         res.status(200).json(todoLists);
     } catch (error) {
-        console.error('Problem s načitanim listov', error);
+        console.error('Problem s načítaním listov:', error);
         res.status(500).json({ message: 'Server Error' });
     }
 };
-
 exports.getTodoListsByMember = async (req, res) => {
     const userId = req.params.userId;
 

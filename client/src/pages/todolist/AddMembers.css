@@ -1,4 +1,3 @@
-
 .main-add-member-container {
     color: white;
     display: flex;
@@ -11,36 +10,40 @@
 
 .second-add-member-container {
     width: 80%;
+    max-width: 600px;
     display: flex;
     flex-direction: column; 
     align-items: center;
     justify-content: center;
-    
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .second-add-member-container h2 {
     text-align: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .second-add-member-container input[type="email"] {
     padding: 12px 20px;
-    margin: 20px 0;
+    margin: 12px 0;
     font-size: 18px; 
     color: #444; 
-    background-color: black; 
-    border: 2px solid #FFDE60; 
-
+    background-color: #333; 
+    border: 2px solid #FFDE60;
+    border-radius: 8px;
     outline: none;
-    width: 80%;
+    width: 100%;
+    transition: border-color 0.3s ease;
 }
-
 
 .second-add-member-container input[type="email"]::placeholder {
-    color: #444;
+    color: #888;
     font-family: "Agdasima", sans-serif;
 }
-
 
 .second-add-member-container input[type="email"]:focus {
     border-color: #FFDE60; 
@@ -50,14 +53,15 @@
     color: black;
     font-family: "Agdasima", sans-serif;
     font-size: 20px; 
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin: 0 5px;
+    margin: 10px 0;
     background-color: #FFDE60; 
+    border-radius: 8px;
+    width: 100%;
     height: 50px;
-
 }
 
 .confirm-button:hover {
@@ -65,10 +69,11 @@
     color: white;
 }
 
-
 .error-message {
     color: red;
     margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .quantity-button {
@@ -82,26 +87,102 @@
     margin: 0 10px; 
     width: 50px;
     height: 50px;
-    
+    background-color: #FFDE60;
+    border-radius: 50%;
 }
 
 .quantity-button:hover {
     background-color: #0e0e0e;
     color: white;
 }
-.email-field{
+
+.email-field {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
-.add-div{
+
+.add-div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
-.add-div button{
+
+.add-div button {
     width: 100%;
     margin: 10px;
+}
+
+.current-members-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.current-members-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #444;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    color: white;
+}
+
+.remove-member-button {
+    color: #FFDE60;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-member-button:hover {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .second-add-member-container {
+        width: 90%;
+    }
+
+    .confirm-button {
+        font-size: 18px;
+    }
+
+    .quantity-button {
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .second-add-member-container {
+        padding: 15px;
+    }
+
+    .confirm-button {
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .quantity-button {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .error-message {
+        font-size: 12px;
+        text-align: center;
+    }
 }

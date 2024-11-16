@@ -238,7 +238,7 @@ const handleToggleTask = async (taskId) => {
           <h1 className='todo-title'>{list.title}</h1>
         )}
 
-        <form onSubmit={handleAddTask} className='todo-form'>
+        <form onSubmit={handleAddTask} className='todo-form-detail'>
           <input
             type="text"
             className="todo-input"
